@@ -22,6 +22,7 @@ try{
 
     // file has been uploaded successfull
     console.log("file is uploaded on clodinary",response.url);
+    fs.unlinkSync(localFilePath);
     return response;
 
 }catch(error){
